@@ -1,9 +1,10 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // when 'mode' set into production, output will be minify,
 // when 'mode' set into development, output will be readable,
 const MODE = 'development';
 const enabledSourceMap = (MODE === 'development');
 
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   // JS file as a main - this should be an entry point
@@ -70,6 +71,11 @@ module.exports = {
       },
     ],
   },
+
+  // requires plugin to divide css and js when execute bundle
+  plugins: [
+    new ExtractTextPlugin('style.css'),
+  ],
 
   // to run localhost (normally 8080)
   // this code will open localhost when webpack has been executed
