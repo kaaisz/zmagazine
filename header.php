@@ -25,31 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zmagazine' ); ?></a>
 
-	<header id="header" class="header">
-		<h1 class="header__logo">
-			<a href="{{ home_url('/') }}">
-				<img src="<?= get_template_directory_uri(); ?>/assets/svg/szdplogo-for-web.svg" />
-			</a>
-		</h1>
-		<!-- //hamburger menu// -->
-		<nav class="nav">
-			<div id="nav__toggle" class="nav__toggle">
-				menu
-				<span class="nav__bar"></span>
-				<span class="nav__bar"></span>
-				<span class="nav__bar"></span>
-			</div>
-			<!-- //"nav__list" will be a toggle class for open and close// -->
-				<?php wp_nav_menu(
-					$args = array(
-						'menu_class' => 'nav__list',
-						'menu_id'    => 'nav__list',
-					)
-				);?>
-		</nav>
-	</header>
-
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="header site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -69,12 +45,20 @@
 			<?php //endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="nav main-navigation">
+			<div id="nav__toggle" class="nav__toggle">
+				menu
+				<span class="nav__bar"></span>
+				<span class="nav__bar"></span>
+				<span class="nav__bar"></span>
+			</div>
+			<!-- //"nav__list" will be a toggle class for open and close// -->
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zmagazine' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'menu_class' => 'nav__list',
+				'menu_id'    => 'nav__list',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

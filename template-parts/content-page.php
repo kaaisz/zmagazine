@@ -49,4 +49,7 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+	<footer class="entry-footer">
+		<?php zmagazine_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
