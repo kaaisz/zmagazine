@@ -1,0 +1,26 @@
+$background: #FBFAF5;
+$font-stack-heading: 'Optima', 'Times New Roman', serif;
+$font-stack-content: 'Baskerville', 'Times New Roman', serif;
+$color-content: #887F7A;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $background;
+}
+
+h1 {
+  font-family: $font-stack-heading;
+  color: $color-content;
+  font-weight: 200;
+}
+
+p {
+  color: $color-content;
+}

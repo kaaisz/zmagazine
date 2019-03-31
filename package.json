@@ -1,0 +1,17 @@
+{
+  "name": "zmagazine",
+  "version": "1.0.0",
+  "description": "Z magazine is the web magazine for the cultural things inspired by zen",
+  "main": "main.js",
+  "repository": "https://github.com/suzydp/zmagazine.git",
+  "author": "Kaai Suzuki <suzydp@me.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^8.0.0",
+    "node-sass": "^4.11.0"
+  }
+}
