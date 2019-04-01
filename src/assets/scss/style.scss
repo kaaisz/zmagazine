@@ -1,2 +1,60 @@
 @import "base";
 @import "grid";
+
+
+$font-heading: "optima", "Georgia", serif;
+$font-paragragh: "Baskerville", "Times New Roman", serif;
+$font-small: "Futura Std", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$color-bg: #FBFAf5;
+$color-primary: #71686C;
+$color-secondary: #887F7A;
+$color-sccent: #949495;
+$fontsize-p: 14px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-bg;
+}
+
+h1, a, p {
+  font-family: $font-heading;
+  color: $color-primary;
+  font-weight: 200;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: $font-paragragh;
+  font-size: $fontsize-p;
+}
+
+.container {
+  margin: 0 40px;
+}
+
+.header {
+  &__title {
+    margin: 40px 0;
+  }
+}
+
+.post {
+  width: 100%;
+  height: 100%;
+  
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+}
