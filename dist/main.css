@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FBFAF5; }
+
+h1 {
+  font-family: "Optima", "Times New Roman", serif;
+  color: #887F7A;
+  font-weight: 200; }
+
+p {
+  color: #887F7A; }

@@ -1,28 +1,16 @@
 {
   "name": "zmagazine",
   "version": "1.0.0",
-  "description": "3rd eye for szdp",
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack && webpack-dev-server",
-    "server": "webpack-dev-server"
-  },
-  "author": "Kaai Suzuki",
+  "description": "Z magazine is the web magazine for the cultural things inspired by zen",
+  "main": "main.js",
+  "repository": "https://github.com/suzydp/zmagazine.git",
+  "author": "Kaai Suzuki <suzydp@me.com>",
   "license": "MIT",
-  "dependencies": {
-    "autoprefixer": "^9.4.9",
-    "css-loader": "^2.1.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "node-sass": "^4.11.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "scrollmagic": "^2.0.6",
-    "style-loader": "^0.23.1",
-    "stylelint": "^9.10.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
   }
 }
