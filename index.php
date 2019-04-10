@@ -19,7 +19,27 @@
     <h1>Z magazine</h1>
   </header>
   <main>
-    <p>This is the main text</p>
+    <?php
+      // define conditions of fetch the posts data
+      $args = array(
+        'post_type' => 'post', // post type
+        'posts_per_page' => 5, // numbers of posts
+      );
+      
+      $wp_query = new WP_Query( $args ); // set the conditions of fetching the posts data
+
+      if( $wp_query -> have_posts() ) { // if the posts was there in this conditions above
+        while ( $wp_query -> have_posts() ) {
+          $wp_query -> the_post();
+    ?>
+      <div class="article">
+        <?php the_title(); ?>
+        <?php the_content(); ?>
+      </div>
+    <?php
+        }
+      }
+    ?>
   </main>
   <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/main.js"></script>
 </body>
