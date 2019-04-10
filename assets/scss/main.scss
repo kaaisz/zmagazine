@@ -28,3 +28,37 @@ h1 {
 p {
   color: $color-content;
 }
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  font-family: $font-stack-content;
+  color: $color-content;
+  margin-left: auto;
+
+  &__toggle {
+    width: 70px;
+    position: relative;
+  }
+
+  &__bar {
+    width: 20px;
+    height: 1px;
+    background: $color-content;
+
+    &:nth-of-type(1) {
+      position: absolute;
+      top: 4px;
+      right: 0;
+    }
+
+    &:nth-of-type(2) {
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+    }
+  }
+}

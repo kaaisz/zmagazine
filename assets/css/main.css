@@ -18,3 +18,27 @@ h1 {
 
 p {
   color: #887F7A; }
+
+header {
+  display: flex;
+  align-items: center; }
+
+.nav {
+  font-family: "Baskerville", "Times New Roman", serif;
+  color: #887F7A;
+  margin-left: auto; }
+  .nav__toggle {
+    width: 70px;
+    position: relative; }
+  .nav__bar {
+    width: 20px;
+    height: 1px;
+    background: #887F7A; }
+    .nav__bar:nth-of-type(1) {
+      position: absolute;
+      top: 4px;
+      right: 0; }
+    .nav__bar:nth-of-type(2) {
+      position: absolute;
+      bottom: 4px;
+      right: 0; }

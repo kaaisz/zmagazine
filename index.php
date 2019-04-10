@@ -17,6 +17,13 @@
 <body>
   <header>
     <h1>Z magazine</h1>
+    <nav class="nav" id="nav">
+      <div class="nav__toggle" id="nav__toggle">
+        <p>Menu</p>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </div>
+    </nav>
   </header>
   <main>
     <?php
