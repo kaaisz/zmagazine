@@ -47,3 +47,8 @@ header {
       position: absolute;
       bottom: 4px;
       right: 0; }
+
+.footer {
+  width: 100%;
+  height: auto;
+  text-align: right; }
