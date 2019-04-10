@@ -16,7 +16,7 @@
 </head>
 <body>
   <header>
-    <h1>Z magazine</h1>
+    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
     <nav class="nav" id="nav">
       <div class="nav__toggle" id="nav__toggle">
         <p>Menu</p>

@@ -20,8 +20,7 @@
           $wp_query -> the_post();
     ?>
       <div class="article">
-        <?php the_title(); ?>
-        <?php the_content(); ?>
+        <a href="<?php the_permalink(); ?>"><?php the_content(); ?></a>
       </div>
     <?php
         }
