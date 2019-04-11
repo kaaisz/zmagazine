@@ -10,7 +10,7 @@
       // define conditions of fetch the posts data
       $args = array(
         'post_type' => 'post', // post type
-        'posts_per_page' => 5, // numbers of posts
+        'posts_per_page' => 10, // numbers of posts
       );
       
       $wp_query = new WP_Query( $args ); // set the conditions of fetching the posts data
@@ -26,5 +26,7 @@
         }
       }
     ?>
+    <?php next_posts_link('Next Page'); ?>
+    <?php previous_posts_link('Previous Page'); ?>
   </main>
   <?php get_footer(); ?>
