@@ -32,10 +32,6 @@ header {
   -ms-flex-align: center;
   align-items: center; }
 
-article .gallery {
-  width: 20px;
-  height: auto; }
-
 .nav {
   font-family: "Baskerville", "Times New Roman", serif;
   color: #887F7A;
