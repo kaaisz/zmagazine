@@ -11,6 +11,7 @@
       $args = array(
         'post_type' => 'post', // post type
         'posts_per_page' => 10, // numbers of posts
+        'paged' => $paged // to show previous posts(It won't be appeared even the link is active)
       );
       
       $wp_query = new WP_Query( $args ); // set the conditions of fetching the posts data
