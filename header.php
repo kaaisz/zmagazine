@@ -21,23 +21,25 @@
     <nav id="nav" class="nav navbar fixed-top navbar-light">
       <a class="nav__title navbar-brand" href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
       <!-- search -->
-      <form class="search form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="search">
-        <button class="btn my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <!-- menus = category -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler__txt">MENU</span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- nav -->
-      <div class="collapse" id="navarToggleExternalContent">
-        <ul class="nav__menu">
-          <li>Category</li>
-          <li>Category</li>
-          <li>Category</li>
-          <li>Category</li>
-        </ul>
+      <div class="nav__menu-box">
+        <form class="search form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="search">
+          <button class="btn my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- menus = category -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler__txt">MENU</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav -->
+        <div class="collapse" id="navarToggleExternalContent">
+          <ul class="nav__menu">
+            <li>Category</li>
+            <li>Category</li>
+            <li>Category</li>
+            <li>Category</li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>

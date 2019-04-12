@@ -1,6 +1,7 @@
 $background: #FBFAF5;
 $font-stack-heading: 'Optima', 'Times New Roman', serif;
 $font-stack-content: 'Baskerville', 'Times New Roman', serif;
+$font-stack-accent: 'Futura Std', 'Helvetica Neue', Helvetica, sans-serif;
 $color-content: #887F7A;
 
 *,
@@ -53,9 +54,26 @@ header {
     font-size: 20px;
   }
 
+  &__menu-box {
+    display: flex;
+  }
+
   &__toggle {
     width: 70px;
     position: relative;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+
+    &__txt {
+      font-family: $font-stack-accent;
+      letter-spacing: 0.25rem;
+      font-size: 12px;
+    }
   }
 
   &__bar {
