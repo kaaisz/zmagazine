@@ -25,12 +25,17 @@ p {
 
 header {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 .nav {
   font-family: "Baskerville", "Times New Roman", serif;
   color: #887F7A;
   margin-left: auto; }
+  .nav.navbar {
+    padding: 16px 40px; }
+  .nav__title.navbar-brand h1 {
+    font-size: 20px; }
   .nav__toggle {
     width: 70px;
     position: relative; }

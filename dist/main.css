@@ -30,12 +30,19 @@ header {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .nav {
   font-family: "Baskerville", "Times New Roman", serif;
   color: #887F7A;
   margin-left: auto; }
+  .nav.navbar {
+    padding: 16px 40px; }
+  .nav__title.navbar-brand h1 {
+    font-size: 20px; }
   .nav__toggle {
     width: 70px;
     position: relative; }

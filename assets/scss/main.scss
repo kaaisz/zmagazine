@@ -37,12 +37,21 @@ p {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
   font-family: $font-stack-content;
   color: $color-content;
   margin-left: auto;
+
+  &.navbar {
+    padding: 40px;
+  }
+
+  &__title.navbar-brand h1 {
+    font-size: 20px;
+  }
 
   &__toggle {
     width: 70px;
