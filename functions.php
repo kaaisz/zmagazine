@@ -21,16 +21,7 @@ add_filter( 'shortcode_atts_gallery', 'change_gallery_atts', 10, 3);
 */
 
 function change_gallery_atts( $output, $pairs, $atts ) {
-  if( $atts['columns'] == 1 ) {
-    // if gallery has one column, use large size
-    $output['size'] = 'large';
-  } else if( $atts['columns'] >= 2 && atts['columns'] <= 4 ) {
-    // if gallery has two - four columns, use medium size
-    $output['size'] = 'medium';
-  } else {
-    // if gallery has more than four columns, use thumbnail size
-    $output['size'] = 'thumbnail';
-  }
+  $output['size'] = 'large';
   return $output;
 }
 
