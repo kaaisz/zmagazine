@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  margin: 40px;
+  margin: 0 auto;
   padding: 0;
   background: $background;
 }
@@ -47,7 +47,7 @@ header {
   margin-left: auto;
 
   &.navbar {
-    padding: 40px;
+    padding: 20px 40px;
   }
 
   &__title.navbar-brand h1 {
@@ -93,6 +93,10 @@ header {
       right: 0;
     }
   }
+}
+
+main {
+  margin: 82px 40px 0;
 }
 
 .footer {

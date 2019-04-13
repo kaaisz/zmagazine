@@ -8,7 +8,7 @@ html {
   margin: 0; }
 
 body {
-  margin: 40px;
+  margin: 0 auto;
   padding: 0;
   background: #FBFAF5; }
 
@@ -40,7 +40,7 @@ header {
   color: #887F7A;
   margin-left: auto; }
   .nav.navbar {
-    padding: 40px; }
+    padding: 20px 40px; }
   .nav__title.navbar-brand h1 {
     font-size: 20px; }
   .nav__menu-box {
@@ -75,6 +75,9 @@ header {
       position: absolute;
       bottom: 4px;
       right: 0; }
+
+main {
+  margin: 82px 40px 0; }
 
 .footer {
   width: 100%;
