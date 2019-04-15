@@ -14,7 +14,7 @@
             <!-- article -->
             <p class="article__category"><?php the_category(', '); ?></p>
             <h2 class="article__title"><?php the_title(); ?></h2>
-            <p class="article__content"><?php the_content(); ?></p>
+            <div class="article__content"><?php the_content(); ?></div>
             <p class="article__date"><?php the_date(); ?></p>
             <div class="pager">
               <?php next_post_link( '<strong class="pager__next-post">%link</strong>' ); ?>

@@ -118,8 +118,10 @@ main {
   }
 
   &__content {
-    font-family: $font-stack-content;
-    font-size: 14px;
+    p {
+      font-family: $font-stack-content;
+      font-size: 14px;
+    }
   }
 
   &__date {

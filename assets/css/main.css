@@ -81,7 +81,7 @@ main {
 .article__title {
   font-size: 24px; }
 
-.article__content {
+.article__content p {
   font-family: "Baskerville", "Times New Roman", serif;
   font-size: 14px; }
 
