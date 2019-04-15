@@ -27,7 +27,9 @@
         }
       }
     ?>
-    <?php next_posts_link('Next Page'); ?>
-    <?php previous_posts_link('Previous Page'); ?>
+    <div class="pager">
+      <?php next_posts_link('<strong class="pager__next-post">Next Page</strong>'); ?>
+      <?php previous_posts_link('<strong class="pager__previous-post">Previous Page</strong>'); ?>
+    </div>
   </main>
   <?php get_footer(); ?>
