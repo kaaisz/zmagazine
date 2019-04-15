@@ -111,6 +111,10 @@ main {
 }
 
 .article {
+  &__eyecatch {
+    max-width: 450px;
+  }
+
   &__category {
     font-family: $font-stack-accent;
     font-size: 12px;

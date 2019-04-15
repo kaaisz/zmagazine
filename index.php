@@ -21,7 +21,7 @@
           $wp_query -> the_post();
     ?>
       <div class="article">
-        <a href="<?php the_permalink(); ?>"><img src="<?php echo first_img_to_eyecatch(); ?>" alt=""></a>
+        <a href="<?php the_permalink(); ?>"><img class="article__eyecatch" src="<?php echo first_img_to_eyecatch(); ?>" alt=""></a>
       </div>
     <?php
         }
