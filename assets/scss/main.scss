@@ -36,6 +36,7 @@ p {
 }
 
 header {
+  max-width: 1560px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +48,9 @@ header {
   margin-left: auto;
 
   &.navbar {
+    max-width: 1560px;
     padding: 20px 40px;
+    margin: 0 auto;
   }
 
   &__title.navbar-brand h1 {
@@ -96,7 +99,9 @@ header {
 }
 
 main {
-  margin: 82px 40px 0;
+  max-width: 1560px;
+  margin: 82px auto 0;
+  padding: 0 40px;
 }
 
 .footer {
