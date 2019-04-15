@@ -102,8 +102,19 @@ main {
   font-family: "Optima", "Times New Roman", serif;
   font-size: 12px; }
 
-.pager__next-post::before {
-  content: "←"; }
-
-.pager__previous-post::after {
-  content: "→"; }
+.pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Optima", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 200; }
+  .pager__next-post::before {
+    content: "←";
+    color: #887F7A; }
+  .pager__previous-post::after {
+    content: "→";
+    color: #887F7A; }
