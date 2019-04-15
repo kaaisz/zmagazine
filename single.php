@@ -5,13 +5,25 @@
         while(have_posts()):
         the_post(); 
     ?>
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <p><?php the_content(); ?></p>
+      <article class="container">
+        <div class="row">
+          <div class="col">
+            <!-- eyecatch -->
+          </div>
+          <div class="col">
+            <!-- article -->
+            <p class="article__category"><?php the_category(', '); ?></p>
+            <h2 class="article__title"><?php the_title(); ?></h2>
+            <p class="article__content"><?php the_content(); ?></p>
+            <p class="article__date"><?php the_date(); ?></p>
+            <?php next_post_link( 'Next : <strong>%link</strong>' ); ?>
+            <?php previous_post_link('Previous : <strong>%link</strong>'); ?>
+          </div>
+        </div>
+      </article>
     <?php
       endwhile; 
       endif; 
     ?>
-    <?php next_post_link( 'Next : <strong>%link</strong>' ); ?>
-    <?php previous_post_link('Previous : <strong>%link</strong>'); ?>
   </main>
 <?php get_footer(); ?>

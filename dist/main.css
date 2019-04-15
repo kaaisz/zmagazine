@@ -12,7 +12,7 @@ body {
   padding: 0;
   background: #FBFAF5; }
 
-h1 {
+h1, h2 {
   font-family: "Optima", "Times New Roman", serif;
   color: #887F7A;
   font-weight: 200; }
@@ -83,3 +83,20 @@ main {
   width: 100%;
   height: auto;
   text-align: right; }
+
+.article__category {
+  font-family: "Futura Std", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.article__title {
+  font-size: 24px; }
+
+.article__content {
+  font-family: "Baskerville", "Times New Roman", serif;
+  font-size: 14px; }
+
+.article__date {
+  font-family: "Optima", "Times New Roman", serif;
+  font-size: 12px; }
