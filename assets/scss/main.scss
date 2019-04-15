@@ -29,6 +29,11 @@ h1, h2 {
 a {
   color: $color-content;
   text-decoration: none;
+
+  &:hover {
+    color: $color-content;
+    text-decoration: none;
+  }
 }
 
 p {
