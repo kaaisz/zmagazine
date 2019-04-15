@@ -127,3 +127,17 @@ main {
     font-size: 12px;
   }
 }
+
+.pager {
+  &__next-post {
+    &::before {
+      content: "←";
+    }
+  }
+
+  &__previous-post {
+    &::after {
+      content: "→";
+    }
+  }
+}

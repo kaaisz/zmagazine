@@ -16,8 +16,10 @@
             <h2 class="article__title"><?php the_title(); ?></h2>
             <p class="article__content"><?php the_content(); ?></p>
             <p class="article__date"><?php the_date(); ?></p>
-            <?php next_post_link( 'Next : <strong>%link</strong>' ); ?>
-            <?php previous_post_link('Previous : <strong>%link</strong>'); ?>
+            <div class="pager">
+              <?php next_post_link( '<strong class="pager__next-post">%link</strong>' ); ?>
+              <?php previous_post_link('<strong class="pager__previous-post">%link</strong>'); ?>
+            </div>
           </div>
         </div>
       </article>

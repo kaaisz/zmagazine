@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -100,3 +101,9 @@ main {
 .article__date {
   font-family: "Optima", "Times New Roman", serif;
   font-size: 12px; }
+
+.pager__next-post::before {
+  content: "←"; }
+
+.pager__previous-post::after {
+  content: "→"; }
