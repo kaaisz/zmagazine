@@ -21,6 +21,9 @@ h1, h2 {
 a {
   color: #887F7A;
   text-decoration: none; }
+  a:hover {
+    color: #887F7A;
+    text-decoration: none; }
 
 p {
   color: #887F7A; }
